@@ -14,10 +14,10 @@
             SelectedIndex="0"
             Margin="8,8,8,0"
             Width="200">
-            <ComboBoxItem Content="Завдання 1 – тільки фігура"/>
-            <ComboBoxItem Content="Завдання 2 – рух (x(t), y(t))"/>
-            <ComboBoxItem Content="Завдання 3 – рух + обертання"/>
-            <ComboBoxItem Content="Завдання 4 – рух + обертання + масштаб"/>
+            <ComboBoxItem Content="Завдання1 – тільки фігура"/>
+            <ComboBoxItem Content="Завдання2 – рух (x(t), y(t))"/>
+            <ComboBoxItem Content="Завдання3 – рух+обертання"/>
+            <ComboBoxItem Content="Завдання4 – рух+обертання+масштаб"/>
         </ComboBox>
 
         <Canvas x:Name="RootCanvas">
