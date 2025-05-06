@@ -64,3 +64,4 @@
 /home/kirito/RiderProjects/Lab15/Lab15/obj/Debug/net9.0/Lab15.csproj.Up2Date
 /home/kirito/RiderProjects/Lab15/Lab15/obj/Debug/net9.0/Lab15.genruntimeconfig.cache
 /home/kirito/RiderProjects/Lab15/Lab15/obj/Debug/net9.0/ref/Lab15.dll
+/home/kirito/RiderProjects/Lab15/Lab15/obj/Debug/net9.0/Lab15.sourcelink.json
