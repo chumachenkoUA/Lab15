@@ -1,0 +1,50 @@
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Lab15.MainWindow"
+    Width="800"
+    Height="600"
+    Title="Lab15 – Візуалізація руху">
+
+    <DockPanel>
+
+        <ComboBox
+            x:Name="TaskSelector"
+            DockPanel.Dock="Top"
+            SelectedIndex="0"
+            Margin="8,8,8,0"
+            Width="200">
+            <ComboBoxItem Content="Завдання 1 – тільки фігура"/>
+            <ComboBoxItem Content="Завдання 2 – рух (x(t), y(t))"/>
+            <ComboBoxItem Content="Завдання 3 – рух + обертання"/>
+            <ComboBoxItem Content="Завдання 4 – рух + обертання + масштаб"/>
+        </ComboBox>
+
+        <Canvas x:Name="RootCanvas">
+            <!-- <——— ВАЖЛИВО: саме цей елемент шукає C#‑код ———> -->
+            <Path
+                x:Name="Shape"
+                Fill="#3F51B5"
+                Stroke="#1A237E"
+                StrokeThickness="2"
+                RenderTransformOrigin="0.5,0.5">
+                <Path.Data>
+                    <PathGeometry Figures="
+                        M 20 50
+                        C 20 30 40 30 50 50
+                        C 60 70 80 70 80 50
+                        C 80 30 60 30 50 50
+                        C 40 70 20 70 20 50 Z" />
+                </Path.Data>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+
+    </DockPanel>
+</Window>
